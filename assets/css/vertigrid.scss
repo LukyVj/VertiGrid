@@ -1,0 +1,148 @@
+/*
+Vertigrid v0.0.1
+author : @Lukyvj
+vertigrid.scss
+*/
+$v:100vh;
+$w:100vw;
+$m:$v/100;
+@mixin full {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+[class*="v-g"]{
+
+  @include full();
+
+
+
+  >div{
+    vertical-align: top;
+    float: left;
+    &:last-child{float: right;}
+    display: flex;
+    -webkit-box-shadow:inset 0 0 0 .2em #fff;
+  }
+  [class*="vg-1"]{
+    width: $w;
+    margin: $m 0;
+  }
+  [class*="vg-2"]{
+    width: $w/2;
+    margin: $m 0;
+  }
+  [class*="vg-3"]{
+    width: $w/3;
+    margin: $m 0;
+  }
+   [class*="vg-4"]{
+    width: $w/4;
+    margin: $m 0;
+  }
+   [class*="vg-5"]{
+    width: $w/5;
+    margin: $m 0;
+  }
+   [class*="vg-6"]{
+    width: $w/6;
+    margin: $m 0;
+  }
+    [class*="vg-7"]{
+    width: $w/7;
+    margin: $m 0;
+  }
+   [class*="vg-8"]{
+    width: $w/8;
+    margin: $m 0;
+  }
+
+
+  //Sizes Horizontal
+  [class*="vg-1-1"],
+  [class*="vg-2-1"],
+  [class*="vg-3-1"],
+  [class*="vg-4-1"],
+  [class*="vg-5-1"],
+  [class*="vg-6-1"],
+  [class*="vg-7-1"],
+  [class*="vg-8-1"]{
+    height:$v;
+  }
+[class*="vg-1-2"],
+  [class*="vg-2-2"],
+  [class*="vg-3-2"],
+  [class*="vg-4-2"],
+  [class*="vg-5-2"],
+  [class*="vg-6-2"],
+  [class*="vg-7-2"],
+  [class*="vg-8-2"]{
+    height:$v/2;
+  }
+  [class*="vg-1-3"],
+  [class*="vg-2-3"],
+  [class*="vg-3-3"],
+  [class*="vg-4-3"],
+  [class*="vg-5-3"],
+  [class*="vg-6-3"],
+  [class*="vg-7-3"],
+  [class*="vg-8-3"]{
+      height:$v/3;
+    }
+[class*="vg-1-4"],
+  [class*="vg-2-4"],
+  [class*="vg-3-4"],
+  [class*="vg-4-4"],
+  [class*="vg-5-4"],
+  [class*="vg-6-4"],
+  [class*="vg-7-4"],
+  [class*="vg-8-4"]{
+      height:$v/4;
+    }
+  [class*="vg-1-5"],
+  [class*="vg-2-5"],
+  [class*="vg-3-5"],
+  [class*="vg-4-5"],
+  [class*="vg-5-5"],
+  [class*="vg-6-5"],
+  [class*="vg-7-5"],
+  [class*="vg-8-5"]{
+      height:$v/5;
+    }
+[class*="vg-1-6"],
+  [class*="vg-2-6"],
+  [class*="vg-3-6"],
+  [class*="vg-4-6"],
+  [class*="vg-5-6"],
+  [class*="vg-6-6"],
+  [class*="vg-7-6"],
+  [class*="vg-8-6"]{
+      height:$v/6;
+    }
+[class*="vg-1-7"],
+  [class*="vg-2-7"],
+  [class*="vg-3-7"],
+  [class*="vg-4-7"],
+  [class*="vg-5-7"],
+  [class*="vg-6-7"],
+  [class*="vg-7-7"],
+  [class*="vg-8-7"]{
+      height:$v/7;
+    }
+[class*="vg-1-8"],
+  [class*="vg-2-8"],
+  [class*="vg-3-8"],
+  [class*="vg-4-8"],
+  [class*="vg-5-8"],
+  [class*="vg-6-8"],
+  [class*="vg-7-8"],
+  [class*="vg-8-8"]{
+      height:$v/8;
+    }
+}
+
+
+.f{background: red !important;}
